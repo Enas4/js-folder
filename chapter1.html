@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chap 1</title>
+</head>
+<body id="body">
+     <script>   
+    // <!--asking ques -->
+
+// Q:1 "Declare & initialize a variable to keep track of how many
+// times a visitor has visited a web page. Show his/her
+// number of visits on your web page. For example: “You
+// have visited this site N times”.
+
+// var a = 1;
+// a ++;
+// alert("you have visited this page" + a + "times !");
+
+
+
+//Q:2 apple
+// appl
+// app
+// ap
+// a
+//   var a = "apple";   
+//   for(var i = a.length; i > 0; i--){
+//     document.write(a.slice(0, i) + "<br />");
+//   }
+
+// Q:3 Write a program to take input a number from user &
+// display it’s multiplication table on your browser. If user
+// does not enter a new number, multiplication table of 5
+// should be displayed by default.
+
+// var user = prompt("enter any number");
+//     if(Number(user)){
+//         for(var i = 1; i <= 10; i++){
+//     document.write(user + " x " +  i + " = " + user*i + "<br />");
+//     }
+//     } 
+// else if
+//     (typeof user == "string"){
+//         for(var i = 1; i <= 10; i++){ 
+//     document.write(5 + " x " + i + " = " + 5*i + "<br />");
+//     }
+// }
+    
+    // <!--asking ques -->
+// Q:4 Take
+// a) Take three subjects name from user and store them in 3
+// different variables.
+// b) Total marks for each subject is 100, store it in another
+// variable.
+// c) Take obtained marks for first subject from user and
+// stored it in different variable.
+// d) Take obtained marks for remaining 2 subjects from user
+// and store them in variables.
+// e) Now calculate total marks and percentage and show the
+// result in browser like this.(Hint: user table)
+
+var a1 = document.getElementById("body");
+var a = document.createElement("h1");
+var b = document.createTextNode("MARK SHEET");
+var c = a.appendChild(b);
+var d = a1.appendChild(a);
+document.write( "<br />" + "<br />");
+
+var chemistry = +prompt("enter chemistry marks");
+var maths = +prompt("enter maths marks");
+var physics = +prompt("enter physics marks");
+
+var c = chemistry /100 * 100;
+var m = maths /100 * 100;
+ var p = physics /100 * 100;
+
+ document.write("Chemistry : " + "Total marks = 100 " + "Obtained marks " + chemistry + "percentage " + c + "%" + "<br />");
+ document.write("Maths : " + "Total marks = 100 " + "Obtained marks " + maths + "percentage " + m + "%" + "<br />");
+ document.write("Physics : " + "Total marks = 100 " + "Obtained marks " + physics + "percentage " + p + "%" + "<br />");
+ var total_marks_obtained= chemistry + maths + physics;
+ var total = 300;
+ var total_per = total_marks_obtained / total * 100;
+ document.write("Percentage : " + total_per + "%");
+
+
+
+// Q:5 Write a program to take “city” name as input from user. If
+// user enters “Karachi”, welcome the user like this:
+// “Welcome to city of lights”
+
+// var user = prompt("enter city name");
+// function cities(user){
+//    user = user.toLowerCase();
+// switch(user){
+//     case "islamabad":
+//     document.write("capital smart city");
+//     break;
+//     case "karachi":
+//     document.write("city of lights");
+//     break;
+//     case "lahore":
+//     document.write("city of mughals");
+//     break;
+//     case "multan":
+//     document.write("city of saints");
+//     break;
+//     default:
+//     document.write("enter any city name");
+// }
+// }
+// cities(user);    
+
+// Write a program to take input remaining fuel in car (in
+// litres) from user. If the current fuel is less than 0.25litres,
+// show the message “Please refill the fuel in your car”
+
+// var user = prompt("enter your fuel in litres");
+// if (user < 0.25){
+//     alert("Please refill the fuel in your car");
+// }
+
+
+// Q:7 Run this script, & check whether alert message would be
+// displayed or not. Record the outputs.
+
+//  var a = 4;
+// if (++a === 5){
+// alert("given condition for variable a is true");
+// }   //true
+
+//  var b = 82;
+// if (b++ === 83){
+// alert("given condition for variable b is true");
+// }   //false
+
+//  var c = 12;
+// if (c++ === 13){
+// alert("condition 1 is true");
+// }
+// if (c === 13){
+// alert("condition 2 is true");  //true
+// }
+// if (++c < 14){
+// alert("condition 3 is true");
+// }
+// if(c === 14){
+// alert("condition 4 is true");   //true
+// }
+
+//  var materialCost = 20000;
+// var laborCost = 2000;
+// var totalCost = materialCost + laborCost;
+// if (totalCost === laborCost + materialCost){
+// alert("The cost equals");
+// }  //true
+
+//  if (true){
+// alert("True");
+// }
+// if (false){
+// alert("False");
+// }   //true
+
+//  if("car" < "cat"){
+//  alert("car is smaller than cat"); //true
+//  }
+
+
+// Q:8 Store a secret number (ranging from 1 to 10) in a variable.
+// Prompt user to guess the secret number.
+// a. If user guesses the same number, show “Bingo! Correct
+// answer”.
+// b. If the guessed number +1 is the secret number, show
+// “Close enough to the correct answer”.
+
+// var secret_num = prompt("enter any secret number");
+// var a = Math.random() * 10 + 1;
+// var b = Math.floor(a);
+// if(secret_num == b){
+//     alert("Bingo!Correct answer");
+// }
+// else if
+//     (secret_num+1 == b){
+//         alert("Close enough to the correct answer");
+//     }
+
+
+// Q:9 Write a program to check whether the given number is
+// divisible by 3. Show the message to the user if the number
+// is divisible by 3.
+
+// var num = +prompt("enter any number that should be divisible by 3");
+// if(num % 3 == 0){
+//     alert("num is divisible by 3");
+// }
+
+
+// Q:10 Write a program to create a calculator for +,-,*, / & %
+// using if statements. Take the following input:
+// a. First number
+// b. Second number
+// c. Operation (+, -, *, /, %)
+// Compute & show the calculated result to user
+
+// var input_1 = Number(prompt("enter first number"));
+// var input_2 = Number(prompt("enter second number"));
+// var operator = prompt("enter operator");
+
+// if(operator == "*"){
+//    alert(input_1 * input_2);
+// }
+// else if(operator == "-"){
+//    alert(input_1 - input_2);
+// }
+// else if(operator == "/"){
+//    alert(input_1 / input_2);
+// }
+// else if(operator == "%"){
+//    alert(input_1 % input_2);
+// }
+// else if(operator == "+"){
+//    alert(input_1 + input_2);
+// }
+
+
+
+
+    </script>
+</body>
+</html>
