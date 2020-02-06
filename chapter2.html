@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>chapter 2</title>
+</head>
+<body>
+    <script>
+        // asking question
+
+//        Q:1 Write a program that takes a character (number or string)
+// in a variable & checks whether the given input is a
+// number, uppercase letter or lower case letter. (Hint: ASCII
+// codes:- A=65, Z=90, a=97, z=122).
+
+
+// Q:2 Write a program that takes a character (i.e. string of
+// length 1) and returns true if it is a vowel, false otherwise
+
+
+// var input_1 = prompt("enter vowel");
+// var vowel = ["a", "e", "i", "o", "u"];
+// var found = false;
+
+// for(var i = 0; i < vowel.length; i++){
+//    if(vowel[i] == input_1){
+//     found = true;
+//     break;
+//    }
+// }
+// if (found == true){
+//     alert ("you hav entered vowel");
+// }
+// else{
+//     alert("learn the vowels");
+// }
+
+// Q:3 Write a program that takes time as input from user in 24
+// hours clock format like: 1900 = 7pm. Implement the
+// following case using if, else & else if statements
+
+// var time = prompt("enter the 24 hr format time");
+
+// if (time >= 0000 && time < 1200){
+//     alert("good morning !");
+// }
+// else if(time >= 1200 && time <= 1700){
+//     alert("good afternoon !");
+// }
+// else if(time >= 1700 && time <= 2100){
+//     alert("good evening !")
+// }
+// else if(time >= 2100 && time <= 2359){
+//     alert("good night !")
+// }
+
+
+// Q:4 Create a new array. Store values one by one in such a way
+// that you can access the values in reverse order. (Last InFirst Out)
+
+// var colors = ["this", "is", "my", "cat"];
+// for(var i = colors.length-1; i >= 0; i--){
+//     document.write(colors[i]);
+// }
+
+
+// Q:5 Write a program to print multiplication table of any
+// number using for loop. Table number & length should be
+// taken as an input from user.
+
+// var a = Number(prompt("enter any number"));
+// var b = Number(prompt("enter the limited number"));
+
+//          for(var i = 1; i <= b; i++){
+//                  document.write(a + "x" + i + "=" + a*i + "<br />");
+//              }
+
+
+// Q:6 Write a program to identify the largest number in the
+// given array.
+
+// var num = [25, 54, 76, 98];
+//  var max = Math.max(...num);
+// alert(max);
+
+// Q:7 Write a program to identify the smallest number in the
+// given array
+
+// var num = [25, 54, 76, 98];
+//  var min = Math.min(...num);
+// alert(min);
+
+
+// Q:8 Write a program that prints number from start of the
+// array to desired stop value. Given array:
+// var scores = [12, 45, 3, 22, 34, 50];
+// (Hint: take stop value from user)
+// E.g. if user gives 3 as input value print 12, 45, 3
+// if user gives 34 as input value print 12, 45, 3, 22, 34
+
+// var scores = [12, 45, 3, 22, 34, 50];
+// var user = Number(prompt("enter num"));
+// var a = scores.indexOf(user);
+// var total = scores.slice(0, a+1);
+// alert(total);
+
+
+
+// Q: 9 Write a for loop that will iterate from 0 to 20. For each
+// iteration, it will check if the current number is even or
+// odd, and report that to the screen (e.g. "2 is even").
+
+// for(var i = 0; i <= 20; i++){
+//     if(i % 2 == 0){
+//         document.write(i + "is an even " + "<br />");
+//     }
+//     else{
+//         document.write(i + "is an odd " + "<br />");
+//     }
+// }
+
+
+// Q: 10 Write a program to calculate the product of the odd
+// integers from 1 to 7.
+
+// var p = 1;
+// for(var i = 1; i <= 7; i+=2){
+//    var p = p * i ;
+//    document.write(p + "<br />" )
+//  }
+ 
+
+// Q: 11 Write a program that will write out a wedge of stars. The
+// user will enter the initial number of stars, and the
+// program will write out lines of stars where each line has
+// one few star than the previous line.
+
+
+//   var user = prompt("enter row number");
+//  for (var i = 1; i <= user; i++){
+//   for(var j = user; j >= i; j--){
+//       document.write("*");
+//   }
+//   document.write("<br />");
+//  }
+
+
+// Q:12 Write a program to create the following patterns in your
+// browser. Take number of lines as an input.
+
+// var user = prompt("enter row number");
+// var user_1 = prompt("enter column number");
+
+// for (var i = 1; i <= user; i++){
+//     for(var j = user_1; j >= i; j--){
+//         document.write("*");
+//      }
+//      document.write("<br />");
+//    }
+
+
+// Star Pattern
+
+// for (var i = 1; i <= 10; i++){
+//     for(var j = 1; j <= i; j++){
+//         document.write("*");
+//      }
+//      document.write("<br />");
+//     }
+// for(var i = 1; i <= 9; i++){
+//     for(var j = 9; j >= i; j--){
+//         document.write("*");
+//     }
+//     document.write("<br />");
+// }
+
+    </script>
+</body>
+</html>
